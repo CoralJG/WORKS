@@ -1,0 +1,62 @@
+[
+	{
+		"model": "proyectos.empleado",
+		"id": 1,
+		"fields": {
+			"nombre": "Juan",
+			"email": "juan@gmail.com"
+		}
+	},
+	{
+		"model": "proyectos.empleado",
+		"id": 2,
+		"fields": {
+			"nombre": "Roberto",
+			"email": "roberto@gmail.com"
+		}
+	},
+	{
+		"model": "proyectos.empleado",
+		"id": 3,
+		"fields": {
+			"nombre": "Laura",
+			"email": "laura@gmail.com"
+		}
+	},
+	{
+		"model": "proyectos.proyecto",
+		"id": 1,
+		"fields": {
+			"titulo": "Proyecto1",
+			"descripcion": "Gestión",
+			"fecha_inicio": "2024-12-14",
+			"fecha_fin": "2024-3-2",
+			"completado": false,
+			"empleado": 1
+		}
+	},
+	{
+		"model": "proyectos.proyecto",
+		"id": 2,
+		"fields": {
+			"titulo": "Proyecto2",
+			"descripcion": "App",
+			"fecha_inicio": "2024-12-8",
+			"fecha_fin": "2024-12-11",
+			"completado": true,
+			"empleado": 2
+		}
+	},
+	{
+		"model": "proyectos.proyecto",
+		"id": 3,
+		"fields": {
+			"titulo": "Proyecto3",
+			"descripcion": "App",
+			"fecha_inicio": "2024-1-2",
+			"fecha_fin": "2024-1-10",
+			"completado": false,
+			"empleado": 2
+		}
+	}
+]

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Proyectos{% endblock %}
+
+{% block content %}
+<h1>Lista de Proyectos</h1>
+<a href="{% url 'crear_proyecto' %}">Crear Proyecto</a>
+
+<form method="get" action="{% url 'index_proyecto' %}">
+	<select name="empleado">
+		<option value>Todos</option>
+		{% for empleado in empleados %}
+		<option value="{{ empleado.id }}">{{ empleado.nombre }}</option>
+		{% endfor %}
+	</select>
+	<button type="submit">Responsable del proyecto</button>
+</form>
+
+<div>
+	<a href="{% url 'index_proyecto' %}?filtro=completados">Proyectos
+		completados</a>
+	<a href="{% url 'index_proyecto' %}?filtro=incompletos">Proyectos no
+		completados</a>
+	<a href="{% url 'index_proyecto' %}">Todos los Proyectos</a>
+</div>
+
+<ul>
+	{% for proyecto in proyectos %}
+	<li>
+		{{ proyecto.titulo }} - {{ proyecto.descripcion }} - {{proyecto.empleado}}
+		{% if proyecto.completado %}
+		<a href="{% url 'descompletar_proyecto' proyecto.id %}"><button>Descompletar</button></a>
+		{% else %}
+		<a href="{% url 'completar_proyecto' proyecto.id %}"><button>Completar</button></a>
+		<a href="{% url 'editar_proyecto' proyecto.id %}"><button>✏️</button></a>
+		<form action="{% url 'eliminar_proyecto' proyecto.id %}" method="post" style="display:inline">
+			{% csrf_token %}
+			<button type="submit">🗑️</button>
+		</form>
+		{% endif %}
+	</li>
+	{% endfor %}
+</ul>
+{% endblock %}
