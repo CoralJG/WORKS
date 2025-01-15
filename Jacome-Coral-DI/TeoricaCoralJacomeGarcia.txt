@@ -1,0 +1,16 @@
+1. ¿Qué instrucción en JavaScript muestra un mensaje en la consola del navegador?
+(1 punto)
+a) console.log("Hola");
+
+2. ¿Qué etiqueta HTML se utiliza para definir el pie de página de una web?
+
+d) <footer>
+3. ¿Cuál es la forma correcta de crear un array en JavaScript?
+(1 punto)
+a) let miArray= [ ];
+
+4. ¿Cuál es el método correcto para seleccionar un elemento por su ID en JavaScript?
+(1 punto )
+
+c) document.getElementById("id");
+

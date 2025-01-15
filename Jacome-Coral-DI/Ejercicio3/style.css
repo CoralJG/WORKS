@@ -1,0 +1,47 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	border: unset;
+}
+
+.form {
+	text-align: center;
+	justify-content: center;
+	margin: 90px 39%;
+	background-color: pink;
+	height: 240px;
+	border-radius: 20px;
+}
+
+input {
+	text-align: center;
+	font-weight: 400;
+	border-radius: 10px;
+}
+
+#nombre {
+	margin: 10px auto 20px;
+	padding: 10px;
+}
+
+#marca {
+	margin: 10px auto 20px;
+	padding: 10px;
+}
+
+#mostrar {
+	text-align: center;
+	background-color: white;
+	margin: auto auto 20px;
+	padding: 10px;
+}
+
+#btn {
+	width: 150px;
+	color: palevioletred;
+	margin: 10px auto 20px;
+	padding: 10px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 20px;
+}

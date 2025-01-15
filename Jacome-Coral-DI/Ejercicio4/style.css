@@ -1,0 +1,33 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	border: unset;
+}
+
+.doble {
+	text-align: center;
+	justify-content: center;
+	margin: 90px 39%;
+	background-color: rgba(84, 243, 44, 0.801);
+	width: 250px;
+	height: 240px;
+	border-radius: 10px;
+}
+
+.doble:hover {
+	border-radius: 600px;
+	background-color: rgba(40, 122, 19, 0.801);
+}
+
+#mostrar {
+	padding: 75px;
+	color: rgb(46, 109, 88);
+	font-size: x-large;
+}
+
+#mostrar:hover {
+	cursor: pointer;
+	scale: 1.08;
+	color: white;
+}

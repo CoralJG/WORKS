@@ -1,0 +1,27 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+
+section {
+	justify-content: center;
+	background-color: pink;
+	width: 400px;
+	height: 200px;
+	border-radius: 5px;
+	border: 10px solid rgb(245, 178, 236);
+}
+
+div {
+	padding: 60px;
+	text-align: center;
+	color: coral;
+	font-size: xx-large;
+}
+
+div:hover {
+	cursor: pointer;
+	scale: 1.01;
+}
