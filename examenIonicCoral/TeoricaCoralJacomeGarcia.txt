@@ -1,0 +1,11 @@
+Pregunta 1: (1 punto)
+¿Cuál es el nombre del archivo donde se define la estructura general de una aplicación Ionic c
+Vue y donde se mantiene el código común a todas las vistas?
+a) app.vue
+Pregunta 2: (1 punto)
+¿Cuál es la función de <ion-header> en una página de Ionic?
+b) Contener la parte superior de la página, como el título y los botones de navegación.
+Pregunta 3: (1 punto)
+Estructura básica de un componente en Vue/Ionic:
+a)Template, script y style.
+
